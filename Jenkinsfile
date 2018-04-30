@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				sh 'mn test'
+				sh 'mvn test'
 			}
 			post {
 				always {
