@@ -26,5 +26,10 @@ pipeline {
 				sh './jenkins/scripts/deliver.sh'
 			}
 		}
+		stage('APITest') {
+			steps {
+				sh echo 'API testing begins!!!'
+			}
+		}
 	}
 }
