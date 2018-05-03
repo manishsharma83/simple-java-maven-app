@@ -28,7 +28,7 @@ pipeline {
 		}
 		stage('APITest') {
 			steps {
-				sh echo 'API testing begins!!!'
+				echo 'API testing begins!!!'
 			}
 		}
 	}
