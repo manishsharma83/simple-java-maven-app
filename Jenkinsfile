@@ -1,6 +1,5 @@
 pipeline {
 	agent {
-		who
 		docker {
 			image 'maven:3-alpine'
 			args '-v /root/.m2:/root/.m2'
@@ -9,6 +8,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
+				who
 				sh 'mvn -B -DskipTests clean package'
 			}
 		}
